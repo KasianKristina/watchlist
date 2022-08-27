@@ -1,0 +1,112 @@
+$element-menu-color: #000000;
+$brand-color:  #F33F3F;
+$btn-text-color: #E1E1E1;
+$btn-hover-color: #1F1F1F;
+$btn-create-hover-color: #ECBFC0;
+$btn-create-text-color: #141414;
+$btn-list-color: #9A9A9A;
+$input-color: rgba(217, 217, 217, 0.3);
+@mixin btn () {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background: inherit;
+    border-radius: 6px;
+    text-align: left;
+    min-width: 247px;
+    height: 41px;
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+        background: $btn-hover-color;
+    }
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $element-menu-color;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.box {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Archivo';
+    font-weight: 800;
+    font-size: 40px;
+    color: $brand-color;
+}
+
+.input {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    background: inherit;
+    border-radius: 6px;
+    text-align: left;
+    color: $input-color;
+    border: 1px solid $input-color;
+    min-width: 247px;
+    height: 35px;
+}
+
+.btn_home {
+    @include btn();
+    color: $btn-text-color;
+    &::before {
+        content: url('../../assets/Home.png');
+        padding-right: 12px;
+    }
+}
+
+.btn_history {
+    @include btn();
+    color: $btn-text-color;
+    &::before {
+        content: url('../../assets/history.png');
+        padding-right: 12px;
+    }
+}
+
+.btn_create {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    color: $btn-create-text-color;
+    background: $brand-color;
+    border-radius: 6px;
+    min-width: 247px;
+    height: 41px;
+    cursor: pointer;
+    &:hover {
+        background: $btn-create-hover-color;
+    }
+}
+
+.line {
+    border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+}
+
+.btn_list {
+    @include btn();
+    color: $btn-list-color;
+    font-size: 20px;
+}
+
+.guest {
+    font-family: inherit;
+    background: $element-menu-color;
+    border-radius: 4px;
+    color: $btn-text-color;
+    padding: 10px;
+    margin-top: auto;
+}

@@ -1,0 +1,124 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.box {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-size: 40px;
+  color: #F33F3F;
+}
+
+.input {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  background: inherit;
+  border-radius: 6px;
+  text-align: left;
+  color: rgba(217, 217, 217, 0.3);
+  border: 1px solid rgba(217, 217, 217, 0.3);
+  min-width: 247px;
+  height: 35px;
+}
+
+.btn_home {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background: inherit;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 247px;
+  height: 41px;
+  cursor: pointer;
+  padding: 10px;
+  color: #E1E1E1;
+}
+.btn_home:hover {
+  background: #1F1F1F;
+}
+.btn_home::before {
+  content: url("../../assets/Home.png");
+  padding-right: 12px;
+}
+
+.btn_history {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background: inherit;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 247px;
+  height: 41px;
+  cursor: pointer;
+  padding: 10px;
+  color: #E1E1E1;
+}
+.btn_history:hover {
+  background: #1F1F1F;
+}
+.btn_history::before {
+  content: url("../../assets/history.png");
+  padding-right: 12px;
+}
+
+.btn_create {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  color: #141414;
+  background: #F33F3F;
+  border-radius: 6px;
+  min-width: 247px;
+  height: 41px;
+  cursor: pointer;
+}
+.btn_create:hover {
+  background: #ECBFC0;
+}
+
+.line {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+}
+
+.btn_list {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background: inherit;
+  border-radius: 6px;
+  text-align: left;
+  min-width: 247px;
+  height: 41px;
+  cursor: pointer;
+  padding: 10px;
+  color: #9A9A9A;
+  font-size: 20px;
+}
+.btn_list:hover {
+  background: #1F1F1F;
+}
+
+.guest {
+  font-family: inherit;
+  background: #000000;
+  border-radius: 4px;
+  color: #E1E1E1;
+  padding: 10px;
+  margin-top: auto;
+}/*# sourceMappingURL=styles.module.css.map */

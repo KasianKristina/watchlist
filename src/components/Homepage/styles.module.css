@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: 320px auto;
+}
+
+.menu {
+  grid-column: 1;
+}
+
+.content {
+  grid-column: auto;
+}/*# sourceMappingURL=styles.module.css.map */
