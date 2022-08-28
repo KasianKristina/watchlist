@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Menu } from './components/Menu/Menu'
-import { Homepage } from './components/Homepage/Homepage'
+import { Homepage } from './ui/Homepage/Homepage'
 
 function App() {
   return (

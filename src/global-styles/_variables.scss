@@ -1,0 +1,35 @@
+:root {
+    // text colors
+    --text-logo: #F33F3F;
+    --text-primary: #E1E1E1;
+    --text-secondary: #9A9A9A;
+    --text-btn: #141414;
+    --text-placeholder: rgba(217, 217, 217, 0.3);
+  
+    // components color
+    --component-border-default: rgba(217, 217, 217, 0.3);
+    --component-btn-default: #000000;
+    --component-btn-hover: #1F1F1F;
+    --component-btn-secondary: #F33F3F;
+    --component-btn-secondary-hover: #ECBFC0;;
+  
+    // background and stroke
+    --bg-main: rgba(255, 255, 255, 0.1);;
+    --bg-menu: #000000;
+    --bg-secondary: rgba(217, 217, 217, 0.1);
+  
+    // border radiuses
+    --border-radius-xxs: 4px;
+    --border-radius-xs: 6px;
+    --border-radius-s: 8px;
+  
+    // spacings
+    --space-xxxs: 4px;
+    --space-xxs: 8px;
+    --space-xs: 12px;
+    --space-s: 16px;
+    --space-m: 20px;
+    --space-l: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+  }
