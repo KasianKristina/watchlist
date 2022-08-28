@@ -1,9 +1,9 @@
-@import "./_colors.scss";
+@import "./_colors.scss", "./_fonts.scss";
 
 body {
   font-family: 'Lato', sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: rgba(255, 255, 255, 0.1);
   height: 100vh;
 }
 
