@@ -8,6 +8,7 @@
     height: 41px;
     cursor: pointer;
     padding: 10px 0px 10px 12px;
+    margin: 0px 30px;
 }
 
 @mixin btn_default () {
@@ -48,19 +49,31 @@
     font-size: 40px;
 }
 
+.input_box {
+    background-color: var(--component-btn-default);
+    border-radius: var(--border-radius-xs);
+    text-align: left;
+    border: 1px solid var(--component-border-default);
+    min-width: 247px;
+    height: 35px;
+    align-self: center;
+    &::before {
+        content: url('../../../public/icons/search.png');
+        margin: 0px 10px;
+        vertical-align: middle;
+    }
+}
+
 .input {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 16px;
     background-color: var(--component-btn-default);
-    border-radius: var(--border-radius-xs);
+    border: none;
     text-align: left;
     color: var(--text-placeholder);
-    border: 1px solid var(--component-border-default);
-    min-width: 247px;
+    min-width: 197px;
     height: 35px;
-    padding: 0px 0px 0px 50px;
-    background: url('../../../public/icons/search.png') no-repeat 12px 7px;
 }
 
 .btn_home {
@@ -89,14 +102,16 @@
 
 .line {
     border-bottom: 1px solid var(--component-border-default);
+    margin: 0px 30px;
 }
 
-.btn_list {
+.list {
     font-family: 'Lato';
     font-weight: 400;
     color: var(--text-secondary);
     font-size: 20px;
     text-align: left;
+    margin: 0px 30px;
 }
 
 .guest {
