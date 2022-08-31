@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import classnames from 'classnames'
-import { Poster } from '../../Poster/Poster'
+import { PostersApi } from '../../../services/PostersApi'
 
 export const Content = () => {
     return (
@@ -19,7 +19,7 @@ export const Content = () => {
             <div className={styles.content}>
                 <p className={styles.content_text}>Popular movies right now</p>
                 <div className={styles.content_posters}>
-                    <Poster />
+                    <PostersApi />
                 </div>
             </div>
         </div>

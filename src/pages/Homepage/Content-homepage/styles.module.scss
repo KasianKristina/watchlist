@@ -8,7 +8,7 @@
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-main);
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@
     padding: 20px;
     border: 1px solid var(--component-border-info);
     border-radius: var(--border-radius-s);
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -68,6 +69,7 @@ h1 {
         margin: 0px 10px;
         vertical-align: middle;
     }
+    margin-bottom: 40px;
 }
 
 .input {
@@ -107,9 +109,5 @@ h1 {
 .content_text {
     font-size: 32px;
     color: var(--text-primary);
-}
-
-.content_posters {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 35px;
 }
