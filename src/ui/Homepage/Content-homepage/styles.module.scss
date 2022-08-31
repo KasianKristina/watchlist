@@ -1,0 +1,115 @@
+@import "../../../global-styles/index.scss";
+
+@mixin icon() {
+    &::after {
+        padding: 0px 10px;
+        vertical-align: middle;
+    }
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 60px 0px 60px;
+}
+
+.info {
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border: 1px solid var(--component-border-info);
+    border-radius: var(--border-radius-s);
+}
+
+h1 {
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.watchlists {
+    color: var(--text-logo);
+}
+
+.text {
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.vector {
+    @include icon();
+    &::after {
+        content: url('../../../../public/icons/Vector.png');
+    }
+}
+
+.check {
+    @include icon();
+    &::after {
+        content: url('../../../../public/icons/check.png');
+    }
+}
+
+.input_box {
+    background-color: var(--component-btn-default);
+    border-radius: var(--border-radius-xs);
+    border: 1px solid var(--component-border-default);
+    height: 45px;
+    width: 100%;
+    position: relative;
+    &::before {
+        content: url('../../../../public/icons/search.png');
+        margin: 0px 10px;
+        vertical-align: middle;
+    }
+}
+
+.input {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--component-btn-default);
+    border: none;
+    color: var(--text-placeholder);
+    height: 43px;
+    width: 90%;
+}
+
+.input_btn {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--component-btn-secondary);
+    border: none;
+    border-radius: var(--border-radius-xs);
+    height: 43px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 91px;
+    color: var(--text-search);
+}
+
+.content {
+    font-family: 'Lato';
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content_text {
+    font-size: 32px;
+    color: var(--text-primary);
+}
+
+.content_posters {
+    display: flex;
+    justify-content: space-between;
+}
